@@ -3,7 +3,7 @@ This repository contains a Pix2Pix cGAN trained to unfold (Ex,Eg) matrices produ
 
 Our cGAN implementation is constructed with Tensorflow and based on the work of Isola, Zhu, Zhou, and Efros (https://arxiv.org/abs/1611.07004), as well as Tensorflow's "pix2pix: Image Translation with a Conditional GAN" tutorial (https://www.tensorflow.org/tutorials/generative/pix2pix).
 
-Further information can be found in Dembski, Kuchera, Liddck, Ramanujan, and Spyrou, Two-Dimensional Total Absorption Spectroscopy with Conditional Generative Adversarial Networks. 
+Further information can be found in Dembski, Kuchera, Liddick, Ramanujan, and Spyrou, Two-Dimensional Total Absorption Spectroscopy with Conditional Generative Adversarial Networks. 
 
 
 
