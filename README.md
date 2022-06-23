@@ -3,7 +3,7 @@ This repository contains a Pix2Pix cGAN trained to unfold (Ex,Eg) matrices produ
 
 Our cGAN implementation is constructed with Tensorflow and based on the work of Isola, Zhu, Zhou, and Efros (https://arxiv.org/abs/1611.07004), as well as Tensorflow's "pix2pix: Image Translation with a Conditional GAN" tutorial (https://www.tensorflow.org/tutorials/generative/pix2pix).
 
-Further information can be found in Dembski, Kuchera, Liddck, Spyrou, and Ramanujan, Two-Dimensional Total Absorption Spectroscopy with Conditional Generative Adversarial Networks. 
+Further information can be found in Dembski, Kuchera, Liddck, Ramanujan, and Spyrou, Two-Dimensional Total Absorption Spectroscopy with Conditional Generative Adversarial Networks. 
 
 
 
@@ -11,35 +11,14 @@ Further information can be found in Dembski, Kuchera, Liddck, Spyrou, and Ramanu
 
 This code is intended to be run with Python3, with a single C++ file used to convert ROOT data output by the GEANT4 simulation package to CSV files. Required modules and the versions utilized are listed below. 
 
-
-numpy - version 1.21.3
-matplotlib - version 3.3.3
-scikit-learn - version 1.0.1
-pandas - version 0.25.0
-seaborn - version 0.11.2 (optional for viz style purposes)
-
-
-These modules can be installed via pip:
-
 ```
-
-pip install numpy matplotlib skit-learn seaborn
-
+numpy == 1.21.3
+matplotlib == 3.3.3
+scikit-learn == 1.0.1
+pandas == 0.25.0
+seaborn == 0.11.2 (optional for viz style purposes)
+tensorflow-gpu == 2.3.1
 ```
-
-The model is created with 
-
-tensorflow - verson 2.3.1
-
-It is recommended that GPU-compatible Tensorflow is installed to expedite the training time. This can be done via 
-
-```
-
-pip install tensorflow-gpu==2.3.1
-
-```
-
-  
 
 
 # Usage Notes
