@@ -1,6 +1,5 @@
 #Imports
 import numpy as np 
-import matplotlib 
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from sklearn.model_selection import train_test_split 
@@ -67,10 +66,7 @@ epochs=1
 
 print("Training for", epochs, "epochs")
 
-generator=Generator()
-discriminiator=Discriminator()
-
-fit(train_dataset, epochs, test_dataset)
+generator, discriminator = fit(train_dataset, epochs)
 
 #Optional: Save weights
 #generator.save_weights("data/training_weights.h5")
@@ -81,6 +77,7 @@ print("Done Training!")
 
 
 #Optional: Load weights from another training
+#generator=Generator()
 #generator.load_weights("data/generator_weights.h5")
 
 
