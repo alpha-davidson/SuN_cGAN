@@ -193,9 +193,6 @@ checkpoint = tf.train.Checkpoint(generator_optimizer=generator_optimizer,
 
 ### Training Functions ########################################################
 
-
-EPOCHS=125
-
 import datetime
 log_dir="logs/"
 
