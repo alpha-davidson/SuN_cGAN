@@ -1,6 +1,5 @@
 #Imports
 import numpy as np 
-import matplotlib 
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from sklearn.model_selection import train_test_split 
@@ -9,7 +8,7 @@ import sys
 import seaborn 
 seaborn.set_style("whitegrid")
 
-sys.path.insert(0,'src')
+sys.path.append('../src')
 
 from cGAN import Generator, Discriminator, generator_loss, discriminator_loss, train_step, fit
 from Analysis import max_points, single_centroid_calc, peak_errors, double_centroid_calc
@@ -20,7 +19,7 @@ tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 ###########Data processing############################
 
-spectra=np.load("data/spectra.npz")
+spectra=np.load("../data/spectra.npz")
 
 #Parse singles and doubles
 singles=spectra["singles"]
@@ -45,7 +44,7 @@ labels_test=np.concatenate((singles_labels_test, doubles_labels_test), axis=0)
 #Standardize train and test datasets to zero mean and unit variance 
 
 data_train=(data_train-np.mean(data_train))/np.std(data_train)
-data_test=(data_test-np.mean(data_test))/np.std(data_test)
+data_test=(data_test-np.mean(data_train))/np.std(data_train)
 
 print(data_train.shape, data_test.shape)
 #Create Tensorflow Dataset structures from Numpy Arrays
@@ -67,13 +66,10 @@ epochs=1
 
 print("Training for", epochs, "epochs")
 
-generator=Generator()
-discriminiator=Discriminator()
-
-fit(train_dataset, epochs, test_dataset)
+generator, discriminator = fit(train_dataset, epochs)
 
 #Optional: Save weights
-#generator.save_weights("data/training_weights.h5")
+#generator.save_weights("../data/training_weights.h5")
 
 print("Done Training!")
 
@@ -81,7 +77,8 @@ print("Done Training!")
 
 
 #Optional: Load weights from another training
-#generator.load_weights("data/generator_weights.h5")
+#generator=Generator()
+#generator.load_weights("../data/generator_weights.h5")
 
 
 #Re-divide test arrays into singles and doubles, post-standardization
