@@ -1,4 +1,7 @@
 # (Ex,Eg) unfolding with cGANs
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10211817.svg)](https://doi.org/10.5281/zenodo.10211817)
+
 This repository contains a Pix2Pix cGAN trained to unfold (Ex,Eg) matrices produced by the SuN Detector, a segmented NaI(Tl) scintillator developed at the National Superconducting Cyclotron Laboratory. 
 
 Our cGAN implementation is constructed with Tensorflow and based on the work of Isola, Zhu, Zhou, and Efros (https://arxiv.org/abs/1611.07004), as well as Tensorflow's "pix2pix: Image Translation with a Conditional GAN" tutorial (https://www.tensorflow.org/tutorials/generative/pix2pix).
