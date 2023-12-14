@@ -1,6 +1,6 @@
 # (Ex,Eg) unfolding with cGANs
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10211817.svg)](https://doi.org/10.5281/zenodo.10211817)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10379195.svg)](https://doi.org/10.5281/zenodo.10379195)
 
 This repository contains a Pix2Pix cGAN trained to unfold (Ex,Eg) matrices produced by the SuN Detector, a segmented NaI(Tl) scintillator developed at the National Superconducting Cyclotron Laboratory. 
 
