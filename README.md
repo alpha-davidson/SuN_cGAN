@@ -149,3 +149,7 @@ train_example.py will train a Pix2Pix model on a small subset of our training da
 -doubles_analysis.png, a 2D histogram showing percent error results for the provided double gamma-ray testing spectra
 
 Our best weights can also be loaded into the model to view results from a training with a larger training dataset.
+
+## Acknowledgements
+
+This work was supported by the National Science Foundation under grants [PHY-2012865](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2012865), [PHY-1913554](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1913554), [PHY-1430152](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1430152), and [PHY-1613188](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1613188); by the U.S. Department of Energy National Nuclear Security Administration under Grant No. DE-NA0003906; by the DOE Office of Science under Grant No. DE-SC0020451; and by the Department of Energy/National Nuclear Security Administration through the Nuclear Science and Security Consortium under Award No. DE-NA0003180. Computational resources were provided by the Institute for Cyber-Enabled Research at Michigan State University.
